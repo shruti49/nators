@@ -37,7 +37,7 @@ body {
   font-weight: 700;
   display: inline-block;
 
-  //adding gradient to the text  
+  //adding gradient to the text
   background-image: linear-gradient(
     to right,
     $color-primary-light,
@@ -47,10 +47,25 @@ body {
   background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
-  transition: all .2s;
+  transition: all 0.2s;
 
-  &:hover{
+  &:hover {
     transform: skewX(15deg) skewY(2deg) scale(1.1);
-    text-shadow: .5rem 1rem 2rem rgba($color-black,0.2);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  //oppposite of last child
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
